@@ -1,4 +1,3 @@
-
 class Solution:
     def maxArea(self, height) -> int:
         l, r, max_water = 0, len(height)-1, 0
@@ -9,9 +8,3 @@ class Solution:
             else:
                 r -= 1
         return max_water
-
-
-
-height = [2,3,4,5,18,17,6]
-solution = Solution()
-print(solution.maxArea(height))
